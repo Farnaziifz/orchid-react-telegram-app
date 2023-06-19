@@ -1,5 +1,7 @@
+import styles from  "./sidebar.module.scss";
+
 function Sidebar() {
-  return <p>i am Sidebar</p>;
+  return <div className={styles.container}>salam</div>;
 }
 
 export default Sidebar;
