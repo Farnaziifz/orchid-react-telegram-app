@@ -1,0 +1,31 @@
+@import "../../../../../assets/styles/variables";
+
+.content {
+  width: 100%;
+  display: flex;
+}
+.flexEnd {
+  justify-content: flex-end;
+}
+.flexStart {
+  justify-content: flex-start;
+}
+.chatBox {
+  color: $whiteColor;
+  border-radius: 10px;
+  padding: 10px 20px;
+  margin: 5px;
+  max-width: 250px;
+  display: flex;
+  flex-direction: column;
+  .date {
+    margin-top: 5px;
+    font-size: 12px;
+  }
+}
+.mine {
+  background-color: $blueColor;
+}
+.notMine {
+  background-color: $primaryColor;
+}

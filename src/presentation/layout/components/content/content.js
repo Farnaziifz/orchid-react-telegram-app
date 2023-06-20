@@ -1,5 +1,7 @@
+import styles from './content.module.scss'
+
 function Content({ children }) {
-  return <div> {children}</div>;
+  return <div className={styles.container}> {children}</div>;
 }
 
 export default Content;
