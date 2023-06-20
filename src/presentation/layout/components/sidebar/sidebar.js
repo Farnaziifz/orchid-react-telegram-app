@@ -1,28 +1,13 @@
-import SidebarItem from "./components/sidebarItem/sidebarItem";
-import ProfilePlaceHolder from "../../../../assets/images/profileImagePlaceholder.png";
 import SidebarHeader from "./components/sidebarHeader/SidebarHeader";
 import styles from "./sidebar.module.scss";
-
+import Profile from "../profile/profile";
+import SidebarContent from "./components/sidebarContent/sidebarContent";
 function Sidebar() {
-  const chatList = [
-    { id: 1, userName: "farnaz" },
-    { id: 2, userName: "MH" },
-  ];
+  let profileVisible = false;
   return (
     <div className={styles.container}>
       <SidebarHeader />
-      {chatList.map((item) => {
-        return (
-          <SidebarItem
-            key={item.id}
-            profileImage={
-              item.profileImage ? item.profileImage : ProfilePlaceHolder
-            }
-            id={item.id}
-            userName={item.userName}
-          />
-        );
-      })}
+      {!profileVisible ? <SidebarContent /> : <Profile />}
     </div>
   );
 }
