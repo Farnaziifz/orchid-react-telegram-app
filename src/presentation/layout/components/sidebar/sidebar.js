@@ -1,6 +1,6 @@
 import SidebarItem from "./components/sidebarItem/sidebarItem";
 import ProfilePlaceHolder from "../../../../assets/images/profileImagePlaceholder.png";
-
+import SidebarHeader from "./components/sidebarHeader/SidebarHeader";
 import styles from "./sidebar.module.scss";
 
 function Sidebar() {
@@ -10,6 +10,7 @@ function Sidebar() {
   ];
   return (
     <div className={styles.container}>
+      <SidebarHeader />
       {chatList.map((item) => {
         return (
           <SidebarItem
