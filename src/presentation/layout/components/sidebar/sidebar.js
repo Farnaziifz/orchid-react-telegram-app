@@ -2,12 +2,17 @@ import SidebarHeader from "./components/sidebarHeader/SidebarHeader";
 import styles from "./sidebar.module.scss";
 import Profile from "../profile/profile";
 import SidebarContent from "./components/sidebarContent/sidebarContent";
+import { useDispatch, useSelector } from "react-redux";
+
 function Sidebar() {
-  let profileVisible = false;
+  const isProfileVisible = useSelector((state) => {
+    return state.app.isProfileVisible;
+  });
+
   return (
     <div className={styles.container}>
       <SidebarHeader />
-      {!profileVisible ? <SidebarContent /> : <Profile />}
+      {!isProfileVisible ? <SidebarContent /> : <Profile />}
     </div>
   );
 }
