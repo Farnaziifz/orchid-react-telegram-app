@@ -1,14 +1,10 @@
 import SidebarItem from "../sidebarItem/sidebarItem";
 import ProfilePlaceHolder from "../../../../../../assets/images/profileImagePlaceholder.png";
 
-function SidebarContent() {
-  const chatList = [
-    { id: 1, userName: "farnaz" },
-    { id: 2, userName: "MH" },
-  ];
+function SidebarContent({ data, selectChat }) {
   return (
     <div>
-      {chatList.map((item) => {
+      {data.map((item) => {
         return (
           <SidebarItem
             key={item.id}
@@ -17,6 +13,7 @@ function SidebarContent() {
             }
             id={item.id}
             userName={item.userName}
+            onClick={selectChat}
           />
         );
       })}

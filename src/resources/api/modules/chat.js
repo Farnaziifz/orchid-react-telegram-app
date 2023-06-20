@@ -9,6 +9,6 @@ const getChatsData = async () => {
 
 export const chatApi = () => {
   return {
-    getChats: getChatsData,
+    getChatsData,
   };
 };

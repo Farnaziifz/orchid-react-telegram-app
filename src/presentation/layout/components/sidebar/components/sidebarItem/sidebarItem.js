@@ -1,8 +1,14 @@
 import styles from "./SidebarItem.module.scss";
 
-function SidebarItem({ id, profileImage, userName }) {
+function SidebarItem({ id, profileImage, userName, onClick }) {
   return (
-    <div className={styles.container} id={id}>
+    <div
+      className={styles.container}
+      id={id}
+      onClick={() => {
+        return onClick(id);
+      }}
+    >
       <img
         src={profileImage}
         className={styles.profileImage}
