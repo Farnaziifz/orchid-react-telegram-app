@@ -1,5 +1,5 @@
 function Home() {
-  return <div>i am home</div>;
+  return <div>Select Chat</div>;
 }
 
 export default Home;
