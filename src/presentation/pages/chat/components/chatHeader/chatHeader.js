@@ -1,5 +1,5 @@
 import styles from "./chatHeader.module.scss";
-import ProfilePlaceHolder from "../../../../../assets/images/profileImagePlaceholder.png";
+import ProfilePlaceHolder from "assets/images/profileImagePlaceholder.png";
 
 function ChatHeader({ profileImage, userName, status }) {
   return (

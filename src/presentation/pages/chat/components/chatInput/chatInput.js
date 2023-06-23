@@ -1,4 +1,4 @@
-import BaseInput from "../../../../components/BaseInput/baseInput";
+import BaseInput from "presentation/components/BaseInput/baseInput";
 import styles from "./chatInput.module.scss";
 function ChatInput({ message, handleMessage, sendMessage }) {
   return (

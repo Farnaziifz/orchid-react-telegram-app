@@ -1,6 +1,6 @@
 import ProfilePicture from "./components/profilePictute/profilePicture";
-import BaseInput from "../../../components/BaseInput/baseInput";
-import BaseButton from "../../../components/BaseButton/BaseButton";
+import BaseInput from "presentation/components/BaseInput/baseInput";
+import BaseButton from "presentation/components/BaseButton/BaseButton";
 import styles from "./profile.module.scss";
 function Profile() {
   const handleInput = () => {

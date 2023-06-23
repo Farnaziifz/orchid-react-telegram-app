@@ -1,7 +1,7 @@
 import styles from "./SidebarHeader.module.scss";
-import SearchIcon from "../../../../../../assets/images/search-icon.svg";
-import Button from "../../../../../../assets/images/hamburger-icon.svg";
-import Back from "../../../../../../assets/images/back-arrow.svg";
+import SearchIcon from "assets/images/search-icon.svg";
+import Button from "assets/images/hamburger-icon.svg";
+import Back from "assets/images/back-arrow.svg";
 import { useDispatch, useSelector } from "react-redux";
 
 function SidebarHeader() {

@@ -1,4 +1,4 @@
-import ProfileImage from "../../../../../../assets/images/profileImagePlaceholder.png";
+import ProfileImage from "assets/images/profileImagePlaceholder.png";
 import styles from "./profilePicture.module.scss";
 
 function ProfilePicture({ src }) {
